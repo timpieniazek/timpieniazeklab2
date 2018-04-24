@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Tim Pieniazek - Lab 2
+
 public class Perimeter {
 
 	public static void main(String[] args) {
@@ -12,10 +14,11 @@ public class Perimeter {
 		double volume;
 		String yes;
 		
-		System.out.printf("Welcome to Grand Circus' Room Detail Generator!%n%n");
+		System.out.printf("Welcome to Grand Circus' Room Detail Generator!%n");
 		
+		// Do-While loop repeats the user input process, until they type a character other than "Y" or "y"
 		do {				
-			System.out.print("Enter Length: ");
+			System.out.printf("%nEnter Length: ");
 			length = scnr.nextDouble();
 			
 			System.out.print("Enter Width: ");
@@ -34,10 +37,9 @@ public class Perimeter {
 			System.out.println("Volume: " + volume);
 			
 			System.out.printf("%nContinue? (y/n): ");
-			yes = scnr.nextLine();
+			yes = scnr.next();
 			
 		} while (yes.equalsIgnoreCase("y"));
-		System.out.println(yes);
 
 	}
 
