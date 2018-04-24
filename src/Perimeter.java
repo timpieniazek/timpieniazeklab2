@@ -39,8 +39,6 @@ public class Perimeter {
 			System.out.printf("%nContinue? (y/n): ");
 			yes = scnr.next();
 			
-			scnr.close();
-			
 		} while (yes.equalsIgnoreCase("y"));
 
 	}
